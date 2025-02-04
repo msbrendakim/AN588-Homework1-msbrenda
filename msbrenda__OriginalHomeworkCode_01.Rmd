@@ -22,7 +22,7 @@ First, create a vector of 1, word character strings comprising the first line of
 string <- "Stately, plump Buck Mulligan came from the stairhead, bearing a bowl of lather on which a mirror and a razor lay crossed."
 
 # Split the line into words
-words <- str_split(string, " ")[[1]]
+words <- str_split(string, " ")[[1]] #JZ Nice I used regex expression instead of double quotations but your method works too!
 
 print(words)
 ```
@@ -30,11 +30,11 @@ print(words)
 Then, extract every third element of this vector.
 
 ```{r}
-every_third <- words[seq(3, length(words), by = 3)]
+every_third <- words[seq(3, length(words), by = 3)] #JZ I would try to keep a challenge code in one code block so that it is easier to follow. 
 print(every_third)
 ```
 
-### CHALLENGE 2
+### CHALLENGE 2 
 
 ```{r}
 m <- matrix(data = 1:80, nrow = 8, ncol = 10, byrow = FALSE)
@@ -67,7 +67,7 @@ x
 Construct a 4-dimensional, 400 element array (5 x 5 x 4 x 4) named a consisting of the numbers 400 to 1 (i.e., a descending series)
 
 ```{r}
-a <- array(data = 400:1, dim = c(5, 5, 4, 4))
+a <- array(data = 400:1, dim = c(5, 5, 4, 4)) 
 a
 ```
 
@@ -99,7 +99,7 @@ Catarrhini <- c("Cercopithecidae", "Hylobatidae", "Hominidae")
 Anthropoidea <- list(Platyrrhini = Platyrrhini, Catarrhini = Catarrhini)
 
 Tarsioidea <- c("Tarsiidae")
-Haplorhini <- list(Anthropoidea = Anthropoidea, Tarsioidea = Tarsioidea)
+Haplorhini <- list(Anthropoidea = Anthropoidea, Tarsioidea = Tarsioidea) #JZ I think you might be missing catarrhini here
 
 # Strepsirhini
 Lemuroidea <- c("Cheirogaleidae", "Lepilemuridae", "Indriidae", "Lemuridae", "Daubentoniidae")
@@ -145,3 +145,4 @@ When you are done, use the str() command to show the data type for each variable
 ```{r}
 str(df)
 ```
+I think your code was overwall very good! I would try to keep each challenge to a single coding block because it is easier to read and you can just use # to comment inside the code. Aside from that I didn't see any issues and I had similar methods and answers. Good Job!
